@@ -1,0 +1,29 @@
+.scootler{
+    margin-top: 260px;
+    margin-bottom: 266px;
+}
+.scootler__list {
+    @include list-style;
+    display: flex;
+}
+
+@media only screen and (max-width: $tablet){
+    .scootler{
+        margin-left: 130px;
+    }
+    .scootler__list{
+        display: block;
+       
+    }
+}
+@media only screen and (max-width: $mobile){
+    .scootler{
+        margin-left:85px;
+
+    }
+    .scootler__list{
+        display: block;
+        text-align: center;
+       
+    }
+}

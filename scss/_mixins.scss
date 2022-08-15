@@ -1,0 +1,61 @@
+@mixin list-style {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin reset-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: $title;
+    margin-bottom: 24px;
+
+    max-width: 445px;
+}
+
+@mixin text {
+    margin: 0;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 445px;
+    color: $text;
+    margin-bottom: 40px;
+
+}
+
+@mixin mobil-title {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+
+
+    text-align: center;
+    letter-spacing: -2.14286px;
+}
+
+@mixin mobil-text {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+
+    color: #939CAA;
+}

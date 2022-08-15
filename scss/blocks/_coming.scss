@@ -1,0 +1,155 @@
+.coming {
+    display: flex;
+    position: relative;
+    margin-top: 300px;
+     flex-direction: row-reverse;  
+
+
+    &::after {
+        display: block;
+        content: '';
+        background-image: url("../../img/sity-coming.png");
+        background-size: cover;
+        width: 445px;
+        height: 445px;
+        position: absolute;
+
+
+        transform: translate(-660px,-140px);
+
+    }
+    &::before {
+        display: block;
+        content: '';
+        background-image: url("../../img/coming-stick.svg");
+        background-size: cover;
+        width: 734px;
+        height: 150px;
+        position: absolute;
+        z-index: 1;
+
+        transform: translate(-920px,-140px);
+
+    }
+}
+
+.coming__container{
+    margin-right: 30px;
+}
+
+.coming__title {
+  @include title;
+    
+}
+
+.coming__text {
+ @include text;
+
+}
+
+@media only screen and (max-width: $tablet) {
+  .coming{
+    display: flex;
+    flex-direction: column;
+    margin-top: 600px;
+    margin-left: 100px;
+    max-width: 767px;
+    align-items: center;
+    position: relative;
+   
+    &::after{
+        transform: translate(-30px,-0px);
+        top: -500px;
+       
+    }
+    
+    &::before{
+        transform: translate(-450px,-1100px);
+        top:600px;
+    }
+  }
+
+  .coming__text{
+    @include mobil-text;
+    max-width: 573px;
+    text-align: center;
+ 
+   
+  }
+  
+  .coming__title{
+    @include mobil-title;
+    max-width: 457px;
+    text-align: center;
+    margin-left: 40px;
+
+  }
+  .coming__plans{
+    max-width: 50px;
+   margin-left: 200px;
+    text-align: center;
+  }
+ 
+}
+
+@media only screen and (max-width: $mobile) {
+   .coming{
+    display: flex;
+    flex-direction: column;
+    margin-top: 600px;
+    margin-right: 20px;
+   
+   
+   
+      &::after{
+        top: 200px;
+        width: 311px;
+        height: 311px;
+
+        transform: translate(1px,-600px);
+      }
+      
+      &::before{
+        top:600px;
+        max-width: 620px;
+        height: 350px;
+        background-image: url("../../img/mobile-comin-stuck.svg");
+        background-size: 390px 170px;
+        transform: translate(70px,-970px);
+        background-repeat: no-repeat;
+      }
+
+   }
+
+   .coming__container{
+    
+   margin-right: 0;
+   
+  }
+
+  .coming__title{
+    @include mobil-title;
+    max-width: 311px;
+    text-align: center;
+    margin-left: 40px;
+    margin: 0;
+    margin-bottom: 32px;
+
+  }
+
+   .coming__text{
+    @include mobil-text;
+    max-width: 311px;
+    text-align: center;
+ 
+   
+  }
+
+  .coming__plans{
+    max-width: 50px;
+   margin-left: 85px;
+    text-align: center;
+  }
+}
+
+  

@@ -1,0 +1,140 @@
+.payments {
+    display: block;
+    position: relative;
+    margin-top: 300px;
+    margin-bottom: 300px;
+
+
+
+
+    &::after {
+        display: block;
+        content: '';
+        background-image: url("../../img/Bitmap\ \(4\).jpg");
+        background-size: cover;
+        border-radius: 50%;
+        width: 445px;
+        height: 445px;
+        position: absolute;
+
+
+        transform: translate(660px, -350px);
+
+    }
+
+    &::before {
+        display: block;
+        content: '';
+        background-image: url("../../img/payments-stick.png");
+        background-size: cover;
+        width: 734px;
+        height: 150px;
+        position: absolute;
+        z-index: 1;
+
+        transform: translate(910px, 10px);
+
+    }
+}
+
+
+
+
+.payments__title {
+    @include title;
+    padding-right: 50px;
+}
+
+.payments__text {
+    @include text;
+}
+
+@media only screen and (max-width: $tablet) {
+    .payments {
+        display: flex;
+        flex-direction: column;
+        margin-top: 600px;
+        margin-left: 100px;
+        max-width: 767px;
+        align-items: center;
+
+        &::after {
+            transform: translate(-20px, -0px);
+            top: -500px;
+        }
+
+        &::before {
+            transform: translate(390px, -0px);
+            top: -420px;
+        }
+    }
+
+    .payments__title {
+        @include title;
+        padding-right: 0;
+        max-width: 457px;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    .payments__text {
+        @include text;
+        max-width: 573px;
+        text-align: center;
+    }
+
+    .payments__plans {
+        margin-left: 190px;
+    }
+
+}
+
+@media only screen and (max-width: $mobile) {
+    .payments {
+        display: flex;
+        flex-direction: column;
+        margin-top: 600px;
+        margin-left: 100px;
+        align-items: center;
+        margin-bottom: 0;
+
+        &::after {
+            transform: translate(-10px, -400px);
+            top: 2px;
+            width: 311px;
+            height: 311px;
+        }
+
+        &::before {
+            transform: translate(320px, 800px);
+            background-image: url("../../img/mobil-payments-stick.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            top: -1200px;
+        }
+    }
+
+    .payments__title {
+        @include mobil-title;
+        padding-right: 0;
+        max-width: 311px;
+        text-align: center;
+        margin-left: 50px;
+        margin: 0;
+        margin-bottom: 32px;
+
+    }
+
+    .payments__text {
+        @include mobil-text;
+        max-width: 311px;
+        text-align: center;
+    }
+
+    .payments__plans {
+        margin-left: 82px;
+    }
+
+
+
+}

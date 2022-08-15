@@ -1,0 +1,169 @@
+.site-footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 400px;
+    margin-bottom: 100px;
+}
+
+.site-footer__wrapper {
+    display: flex;
+    background-color: $title;
+    align-items: center;
+    padding: 102px 168px 102px 165px;
+}
+
+.site-footer__text {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    max-width: 415px;
+
+
+
+    letter-spacing: -2.14286px;
+
+    color: $white;
+}
+
+.site-footer__img-contain {
+    display: flex;
+
+    &:nth-child(2n) {
+        transform: translate(200px);
+
+    }
+
+
+}
+
+.site-footer__appstore {
+    max-width: 159px;
+    height: 56px;
+    margin-right: 18px;
+}
+
+.site-footer__googleplay {
+    max-width: 182px;
+    height: 56px;
+}
+
+.site-footer__contain {
+    display: flex;
+    align-items: center;
+    background-color: #333A44;
+    padding: 35px 165px 32px 168px;
+}
+
+.site-footer__container {
+    display: flex;
+}
+
+.site-footer__list {
+    display: flex;
+    list-style: none;
+    margin-right: px;
+
+    &:nth-child(3n) {
+        margin-left: -90px;
+
+    }
+}
+
+.site-footer__item {
+    margin-left: 23px;
+
+}
+
+@media only screen and (max-width: $tablet) {
+    .site-footer {
+        max-width: 768px;
+        margin-top: 100px;
+       
+    }
+
+    .site-footer__wrapper {
+        display: block;
+        padding: 62px 156px 62px 155px;
+        text-align: center;
+    }
+
+    .site-footer__text {
+        margin-right: 0;
+        max-width: 457px;
+        margin-bottom: 40px;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        /* or 100% */
+
+        text-align: center;
+        letter-spacing: -1.42857px;
+    }
+
+    .site-footer__contain {
+        padding: 35px 40px 32px 39px;
+    }
+
+    .site-footer__img-contain {
+        margin-left: 35px;
+
+        &:nth-child(2n) {
+            transform: translate(0px);
+
+        }
+
+    }
+
+
+}
+
+@media only screen and (max-width: $mobile) {
+
+    .site-footer {
+        max-width: 375px;
+        margin-top: 200px;
+        margin-right: 56px;
+    }
+
+    .site-footer__wrapper {
+        display: block;
+        padding: 88px 32px 88px 32px;
+        text-align: center;
+    }
+
+    .site-footer__text {
+        margin-right: 0;
+        max-width: 311px;
+        margin-bottom: 40px;
+
+    }
+
+    .site-footer__appstore {
+        max-width: 110px;
+        height: 40px;
+        margin-right: 12px;     
+    }
+
+    .site-footer__googleplay {
+        max-width: 120px;
+        height: 40px;
+    }
+
+    .site-footer__contain {
+        padding: 64px 133px 88px 134px;
+        display: block;
+        text-align: center;
+    }
+
+
+    .site-footer__img-contain {
+        margin-left: 25px;
+
+    }
+}

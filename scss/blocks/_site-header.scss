@@ -1,0 +1,114 @@
+
+
+.site-header__container{
+    display: flex;
+    align-items: center;
+}
+
+.site-header__logo-img{
+    margin-right: 58px;
+}
+
+.site-header__burger{
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+@media only screen and (max-width: $mobile) {
+    .site-header__logo-img{
+        margin-right: 0;
+    
+    }
+    .site-header__logo{
+        margin: 0 auto;
+    }
+
+    .site-header__burger{
+        cursor: pointer;
+        width: 30px;
+        min-height: 15px;
+        display: block;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        position: relative;
+       
+    } 
+    
+    .site-header__burger-inner,
+    .site-header__burger::before,
+    .site-header__burger::after {
+        display: block;
+        width: 16px;
+        height: 3px;
+        background-color: #FCB72B;
+        border-radius: 1.5px;
+        transition: 0.2s ease all;  
+        content: '';
+    }
+    
+    .site-header__burger-inner{
+        margin: 3px 0;
+    }
+
+    .site-header__burger--opened .site-header__burger-inner {
+        display: none;
+    }
+
+    .site-header__burger--opened::before,
+    .site-header__burger--opened::after {
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+
+    .site-header__burger--opened::before {
+        transform: translateY(-50%) rotate(45deg);
+    }
+    .site-header__burger--opened::after {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+    
+    .site-header__nav {
+        display: none;
+    }
+    
+    .site-header--opened {
+        background-color: #FEFCF7;
+    }
+    
+    .site-header--opened .site-header__nav {
+        display: block;
+        
+    }
+    
+    .site-header__nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 87px);
+        background-color: #fff;
+        
+        background: linear-gradient(180deg, #FEFCF7 55.94% ,
+        rgba(254, 252, 247, 0.504981) 100%,);
+        
+    }
+
+    .site-header--opened .nav__list-item{
+       margin-bottom: 32px;
+    }
+
+
+    .site-header__nav-link {
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #333D4B;
+       
+    }
+    
+}

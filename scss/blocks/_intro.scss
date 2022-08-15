@@ -1,0 +1,122 @@
+.intro {
+    display: block;
+    padding: 153px 775px 152px 116px;
+
+    color: #fff;
+    background: url("../../img/intro.jpg");
+    background-size: cover;
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min–moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .about-intro {
+        background: url("../../img/intro@2x.jpg");
+        background-size: cover;
+    }
+
+
+}
+
+.intro__container{
+    max-width: 1140px;
+}
+
+.intro__text {
+    margin: 0;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    color: $white;
+    max-width: 500px;
+    margin-bottom: 40px;
+    
+}
+
+.intro__description{
+    margin: 0;
+   
+    max-width: 405px;
+    margin: 0;
+    color: $white;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 54px;
+    position: relative;
+
+}
+
+.intro__description::before {
+   display: block;
+   content: '';
+   position: absolute;
+   width: 202px;
+   border: 7px solid #FCB72B;
+   background-color: #FCB72B ;
+   transform: translate(-120% , 45px);
+
+   
+}
+.intro__description::after {
+   display: block;
+   content: '';
+   position: absolute;
+   width: 449px;
+   height: 150px;
+   background-image: url(../../img/stick.svg);
+   background-repeat: no-repeat;
+   top: 40px;
+   left: 120%;
+ 
+   z-index: 1;
+   margin-bottom: 160px;
+  
+   
+   
+}
+
+@media only screen and (max-width: $tablet) {
+    .intro {
+        display: block;
+        padding: 137px 98px 217px 97px;
+    
+        
+        background: url("../../img/intro-tablet@1x.jpg");
+        background-size: cover;
+    
+    }
+    
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min–moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+        .about-intro {
+            background: url("../../img/intro-tablet@2x.jpg");
+            background-size: cover;
+        }
+    
+    
+    }
+    .intro__description::before{
+        display: block;
+    }
+    .intro__description::after{
+        display: none   ;
+    }
+    .intro__container{
+        max-width: 768px;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    
+}
+
+
