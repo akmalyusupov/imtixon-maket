@@ -63,7 +63,7 @@ only screen and (min-resolution: 2dppx) {
    
 }
 .intro__description::after {
-   display: none;
+   display: block;
    content: '';
    position: absolute;
    width: 449px;
