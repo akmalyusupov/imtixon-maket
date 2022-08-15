@@ -261,7 +261,7 @@ img {
 }
 
 .intro__description::after {
-  display: block;
+  display: none;
   content: "";
   position: absolute;
   width: 449px;
